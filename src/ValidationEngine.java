@@ -1,5 +1,3 @@
-import java.util.DoubleSummaryStatistics;
-
 /**
  * Created by Nathaniel on 2/3/2016.
  */
@@ -57,7 +55,7 @@ public class ValidationEngine implements IValidationEngine {
                                 result.message = "Value is valid";
                             }
                         }catch (Exception e){
-//                            e.printStackTrace();
+                            e.printStackTrace();
                         }
 
                         break;
@@ -75,7 +73,7 @@ public class ValidationEngine implements IValidationEngine {
                             }
                         //catch error if string contained something that's not a number
                         }catch(Exception e){
-//                            e.printStackTrace();
+                            e.printStackTrace();
                         }
                         break;
                     case "allAlpha":
@@ -101,9 +99,6 @@ public class ValidationEngine implements IValidationEngine {
                         }
                         break;
                 }//end switch
-//                if(result.pass == false){
-//                    break;
-//                }
             }//end for loop
         }//end if
         return result;
